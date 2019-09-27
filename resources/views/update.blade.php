@@ -1,18 +1,22 @@
 @extends('app')
 @section('content')
 <style>
+    body{
+        background-color:  #a4d2df ;
+    }
     .main{
  	padding: 40px 0;
 }
 .main input,
 .main input::-webkit-input-placeholder {
-    font-size: 11px;
+    font-size: 15px;
     padding-top: 3px;
 }
 .main-center{
- 	margin-top: 30px;
+ 	margin-top: 10px;
  	margin: 0 auto;
- 	max-width: 400px;
+ 	max-width: 600px;
+    
     padding: 10px 40px;
 	background:#009edf;
 	    color: #FFF;
@@ -24,14 +28,18 @@ box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.31);
 }
 span.input-group-addon i {
     color: #009edf;
-    font-size: 17px;
+    font-size: 22px;
 }
 
     </style>
+<!-- Button trigger modal -->
+
+
 <div class="container">
+    
     <div class="main">
         <div class="main-center">
-        <h5>Sign up once and watch any of our free demos.</h5>
+       <h2>Edit Employee Details</h2>
         <form class="" method="post" action="{{URL::to('update',$employee->id)}}">
                 @csrf
                 <div class="form-group">

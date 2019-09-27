@@ -14,3 +14,4 @@ Route::get('list','HomeController@list');
 Route::get('edit/{id}','HomeController@edit');
 Route::post('update/{id}','HomeController@update');
 Route::get('delete/{id}','HomeController@delete');
+Route::get('visitor','HomeController@visitor');

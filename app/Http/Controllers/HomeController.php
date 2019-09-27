@@ -4,6 +4,7 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Employee;
+use App\Visitor;
 
 class HomeController extends Controller
 {
@@ -70,5 +71,10 @@ class HomeController extends Controller
         $employee->delete();
 
         return redirect('/list')->with('delete', 'Employee deleted!');
+    }
+    public function visitor(){
+        $data =Visitor::all();
+        return view('visitor_list',['visitors'=>$data]);
+
     }
 }
