@@ -21,6 +21,6 @@
     },
     "dependencies": {
         "ajax": "0.0.4",
-        "jquery": "^3.4.1"
+        "jquery": "^3.5.0"
     }
 }
